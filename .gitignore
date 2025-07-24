@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Vite output directory
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local build
+*.local
+
+# Mac system files
+*.DS_Store
+
+# Vercel/Netlify CLI config (optional if used)
+.vercel/
+.netlify/
+
+# Optional: coverage or test results
+coverage/
+*.lcov
+
+# Optional: Parcel/Vite cache
+.cache/

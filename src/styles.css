@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+ 
+/* Theming variables */
+:root {
+  --bg: #eee;
+  --text: #111;
+}
+
+.dark {
+  --bg: #1e1e1e;
+  --text: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #f5ba13;
+  margin: auto;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 15rem;
+  padding-bottom: 1%;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Notes Grid */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px 0;
+  margin: 0 10px;
+}
+
+/* Note Card */
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.pin-btn {
+  border: 0.1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 3px;
+  padding-right: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.pin-btn:hover {
+  transform: scale(1.1);
+}
+
+.edit-btn {
+  border: 0.1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 3px;
+  padding-right: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.edit-btn:hover {
+  transform: scale(1.1);
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.delete-btn {
+  position: sticky;
+  left: 100%;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ff4d4d;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive NoteForm */
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 0;
+  margin: 0 10px;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.note-form button {
+  align-self: flex-end;
+  background-color: #f5ba13;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background-color: #ecad10;
+  transform: scale(1.1);
+}
+
+/* Search bar + Dark mode layout */
+.above-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.search-bar {
+ padding: 5px;
+ margin-right: 10px;
+ border-radius: 5px;
+ border: 1px solid #ddd;
+}
+
+/* Dark mode styles */
+.app.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.app.dark .note {
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Toggle Switch */
+.dark-mode-toggle {
+  
+  align-items: center;
+  gap: px;
+  margin: 16px;
+}
+
+.dk-input {
+  margin-left: 5px;
+}
