@@ -87,8 +87,8 @@ footer p {
   padding: 3px;
   padding-right: 12px;
   cursor: pointer;
-  margin-left: 10px;
   transition: transform 0.2s ease;
+  margin-left: 10px;
 }
 
 .pin-btn:hover {
@@ -183,7 +183,7 @@ footer p {
 
 .search-bar {
  padding: 5px;
- margin-right: 10px;
+ margin-right: 20px;
  border-radius: 5px;
  border: 1px solid #ddd;
 }
@@ -220,7 +220,6 @@ footer p {
 
   header h1 {
     font-size: 1.5rem;
-    text-align: center;
   }
 
   .note-form {
@@ -270,15 +269,26 @@ footer p {
     width: 100%;
   }
 
+  .pin-btn {
+    margin-left: 0px;
+  }
+
+  .pin-btn:hover {
+  transform: scale(1.03);
+}
+
+  .edit-btn:hover {
+  transform: scale(1.03);
+}
+
   .above-title {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 10px;
   }
 
   .search-bar {
-    width: 100%;
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .dark-mode-toggle {
@@ -332,7 +342,6 @@ footer p {
 
   .note-actions {
     flex-direction: row;
-    gap: 10px;
   }
 
   .pin-btn,
@@ -411,5 +420,9 @@ footer p {
 
   .dark-mode-toggle {
     margin-right: 20px;
+  }
+
+  .above-title {
+    margin: 0 20px;
   }
 }
