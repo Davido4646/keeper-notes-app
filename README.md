@@ -9,13 +9,13 @@ A modern, responsive note-taking web app built with **React (Vite)**, featuring:
 - 💾 LocalStorage support
 - ⚡ Framer Motion animations
 - 📱 Fully Responsive UI
-- ✏️ Edit feature (WIP)
+- ✏️ Edit feature
 
 ---
 
 ## 🚀 Live Demo
 
-👉 [Visit Live Site](https://your-deployed-link.com)  
+👉 [Visit Live Site](https://keeper-notes-app-rho.vercel.app/)  
 *(Replace with your actual Vercel or Netlify URL)*
 
 ---
@@ -53,7 +53,7 @@ A modern, responsive note-taking web app built with **React (Vite)**, featuring:
 ### ✅ Animations
 - Smooth animations for note entry/exit using `framer-motion`.
 
-### 🧪 Edit Notes (Coming Soon)
+### 🧪 Edit Notes
 - Edit existing notes inline.
 
 ---
